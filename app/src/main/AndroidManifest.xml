@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ricardo.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Inicio"
+            android:label="Señas Quilicura" />
+        <activity
+            android:name=".VentanaSplash"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TerrBase"
+            android:parentActivityName=".Inicio" />
+        <activity
+            android:name=".Mapa"
+            android:label="Mapa"
+            android:parentActivityName=".Inicio" />
+        <activity
+            android:name=".Registro"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Predicacion"
+            android:label="Predicación" />
+        <activity android:name=".Formulario" />
+        <activity
+            android:name=".ProxPredicacion"
+            android:label="Siguiente" />
+        <activity
+            android:name=".AntPredicacion"
+            android:label="Anterior" />
+        <activity
+            android:name=".Tut1"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Tut2"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Tut3"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <receiver
+            android:name=".Widget"
+            android:label="Selección Rapida">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_provider" />
+        </receiver>
+
+        <activity
+            android:name=".Configuracion"
+            android:label="Configuración"
+            android:parentActivityName=".Inicio" />
+        <activity
+            android:name=".Informe"
+            android:label="Informe de Servicio"
+            android:parentActivityName=".Inicio" />
+        <activity
+            android:name=".InformePrimeraVez"
+            android:label="Informe de Servicio" />
+        <activity
+            android:name=".formulariodelinforme"
+            android:label="Formulario" />
+        <activity
+            android:name=".Tablero"
+            android:label="Tablero"
+            android:parentActivityName=".Inicio" />
+        <activity
+            android:name=".Vym"
+            android:parentActivityName=".Tablero" />
+        <activity
+            android:name=".ReunionPublica"
+            android:parentActivityName=".Tablero" />
+        <activity
+            android:name=".AcomodacionyM"
+            android:parentActivityName=".Tablero" />
+        <activity
+            android:name=".Aseo"
+            android:parentActivityName=".Tablero" />
+        <activity
+            android:name=".PredicacionExhibidores"
+            android:parentActivityName=".Tablero" />
+        <activity
+            android:name=".formPerson"
+            android:parentActivityName=".Inicio" />
+        <activity android:name=".Direcciones"></activity>
+    </application>
+
+</manifest>

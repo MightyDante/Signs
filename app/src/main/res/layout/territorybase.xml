@@ -1,0 +1,191 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_gravity="center"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true" >
+
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/blocksImage"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:focusableInTouchMode="true"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+               <android.support.design.widget.TextInputLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/Nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="25"
+                    android:gravity="center"
+                    android:hint="Nombre y Apellido"
+                    android:inputType="textPersonName" />
+
+               </android.support.design.widget.TextInputLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <TextView
+                    android:id="@+id/fecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#cb6232"
+                    android:gravity="center"
+                    android:hint="Seleccione Fecha"
+                    android:onClick="onPickDate"
+                    android:padding="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#ffffff"
+                    android:textSize="19sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/cambiocolor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#FF03A29D"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Mañana"
+                    android:textColor="#ffffff" />
+
+                <Switch
+                    android:id="@+id/cambio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:splitTrack="false"
+                    android:textOff="Mañana"
+                    android:textOn="Tarde"
+                    android:theme="@style/SwitchTheme"
+                    tools:checked="false"
+                    android:onClick="changeTime"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Tarde"
+                    android:textColor="#ffffff" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="Manzanas Trabajadas" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00325B"
+                    android:checked="false"
+                    android:onClick="onToogle"
+                    android:padding="6dp"
+                    android:text="Todas"
+                    android:textColor="#FFFFFF"
+                    android:textOff="Todas"
+                    android:textOn="Deseleccionar" />
+
+            </TableRow>
+
+
+            <LinearLayout
+                android:id="@+id/checkbox_container"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:foregroundGravity="center"
+                android:gravity="center">
+            </LinearLayout>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#cb6232"
+                    android:onClick="onClick"
+                    android:text="Enviar"
+                    android:textColor="#ffffff" />
+            </TableRow>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

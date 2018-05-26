@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ricardo.myapplication.Configuracion"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:foregroundGravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <Switch
+            android:id="@+id/saveName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Guardar Nombre"
+            android:textSize="23sp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF1986F"
+            android:gravity="center"
+            android:hint="Ingrese Nombre"
+            android:padding="17dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:maxLength="30"
+            android:textSize="18sp"
+            android:inputType="textPersonName"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

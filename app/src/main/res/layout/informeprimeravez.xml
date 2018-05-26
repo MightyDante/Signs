@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ricardo.myapplication.InformePrimeraVez">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center"
+            android:gravity="center_vertical|center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_weight="1"
+                android:contentDescription="masmas"
+                app:srcCompat="@mipmap/enviaratiempo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/nuevo"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="25dp"
+                android:backgroundTint="#cb6232"
+                android:elevation="10dp"
+                android:foregroundGravity="center"
+                android:text="Nuevo +"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textColorLink="#cb6232"
+                android:textSize="21sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

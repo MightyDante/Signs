@@ -1,0 +1,12 @@
+<appwidget-provider
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/widget"
+    android:minWidth="70dp"
+    android:minHeight="70dp"
+    android:label="Selección Rapida"
+    android:updatePeriodMillis="3600000"
+    android:layout_height="70dp"
+    android:layout_width="70dp"
+    android:radius="25dp"
+
+    />

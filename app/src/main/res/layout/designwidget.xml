@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="70dp"
+    android:layout_width="70dp"
+    android:label="Selección Rapida"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ricardo.myapplication.Formulario">
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/shape">
+
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@mipmap/widget"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

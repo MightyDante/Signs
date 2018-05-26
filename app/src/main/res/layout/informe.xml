@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/listPreferredItemHeight"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/oct1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:text="Ultimo Enviado"
+                android:textAlignment="center"
+
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center"
+        android:gravity="center_vertical|center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            android:contentDescription="masmas"
+            app:srcCompat="@mipmap/enviaratiempo" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:background="#FFF1F1F1"
+        android:padding="8dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerVertical="false"
+            android:layout_marginRight="15dp"
+            android:background="@mipmap/listo" />
+
+        <TextView
+            android:id="@+id/nombre1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:text="Nombre:"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <TextView
+            android:id="@+id/texto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/nombre1"
+            android:layout_below="@+id/nombre1"
+            android:text="Horas: / Folletos: / Videos: / Estudios: ." />
+
+        <TextView
+            android:id="@+id/mes3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/nombre1"
+            android:layout_below="@+id/texto2"
+            android:text="Mes:" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/nuevo"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="25dp"
+            android:backgroundTint="#cb6232"
+            android:elevation="10dp"
+            android:foregroundGravity="center"
+            android:text="Nuevo +"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textColorLink="#cb6232"
+            android:textSize="21sp" />
+    </LinearLayout>
+
+</RelativeLayout>
